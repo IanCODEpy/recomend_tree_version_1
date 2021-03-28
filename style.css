@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Creepster', cursive;
+}
+
+header{
+    background: #343434;
+    width: 100%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    font-size: 3.1253em;
+}
+
+form{
+    /* background: green; */
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#textbox-artist{
+    background-color: rgba(176, 176, 176, 0.5);
+    /* opacity: 50%; */
+    width: 80%;
+    max-width: 430px;
+    margin: auto;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    color: black;
+}
+
+::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.cards-wrapper{
+    font-family: 'Roboto',sans-serif;
+    background-color: rgba(176, 176, 176, 0.5);
+    width: 60%;
+    max-width: 650px;
+    min-width: 550px;
+    margin:auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.cards-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.element-card{
+    background-color: rgba(167, 164, 164, 0);
+    width: 90%;
+    margin: auto;
+    min-height: 130px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    border-radius: 25px;
+    padding-right: 20px;
+    transition: 0.3s;
+}
+
+.element-card:hover{
+    background-color: rgba(167, 164, 164, 0.8);
+}
+
+.img-wrapper{
+    height: 100px;
+    width: 140px;
+    margin-right: 10px;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-wrapper{
+    /* background: chartreuse; */
+    min-height: 100px;
+    min-width: 140px;
+    font-size: 15px;
+}
+
+.artist-title{
+    margin-bottom: 8px;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.genres{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.popularity{
+    margin-bottom: 5px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+
+
+
+
